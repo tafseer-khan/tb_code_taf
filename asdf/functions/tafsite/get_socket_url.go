@@ -12,6 +12,8 @@ func getsocketurl(e event.Event) uint32 {
 		return 1
 	}
 
+	fmt.Println("SHIT")
+
 	channel, err := pubsub.Channel("channelToMake")
 	if err != nil {
 		return 1
